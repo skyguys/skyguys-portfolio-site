@@ -4,8 +4,9 @@
 
 }
 
-.banner-bg{
-    background: linear-gradient( rgb(99, 85, 85), rgb(53, 44, 44) );
+.banner-bg , footer{
+    background-image: linear-gradient( rgba(99, 85, 85, 0.9), rgba(53, 44, 44, 0.9)), url("./../img/camera.jpg");
+    background-size: cover;
 }
 
 

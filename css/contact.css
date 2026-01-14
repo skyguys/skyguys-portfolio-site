@@ -3,9 +3,9 @@
     background-color: rgb(156, 154, 141);
 }
 
-.banner-bg{
+.banner-bg, footer{
 
-    background: linear-gradient( rgb(99, 97, 85), rgb(53, 44, 44) );
+    background-image: linear-gradient( rgba(99, 97, 85, 0.9), rgb(53, 44, 44, 0.9) ), url("./../img/film_burn.jpg");
 }
 
 h1{

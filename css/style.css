@@ -6,7 +6,6 @@ body{
 
 .main-body{
     padding-top: 50px;
-    padding-bottom: 5%;
 }
 
 /* Chaining the selector here allows us to override
@@ -52,4 +51,11 @@ bootstrap's default padding preferences. */
 .banner-bg h1{
     font-weight: 900;
     font-size: 4rem;
+}
+
+footer{
+    padding: 1.5%;
+    /* font-weight: bold; */
+    color: white;
+    text-align: center;
 }

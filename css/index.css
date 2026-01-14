@@ -2,11 +2,11 @@
 /*File-specific styling*/
 .custom-navbar{
     background-color: rgb(141, 154, 156);
-
 }
 
-.banner-bg{
-    background: linear-gradient( rgb(85, 98, 99), rgb(44, 53, 52) );
+.banner-bg, footer{
+    background-image: linear-gradient( rgba(85, 98, 99, 0.95), rgb(44, 53, 52, 0.95));
+    background-size: cover;
 }
 
 .data-box h1, .data-box h2{

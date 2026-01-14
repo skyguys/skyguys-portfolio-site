@@ -4,9 +4,10 @@
 
 }
 
-.banner-bg{
+.banner-bg, footer{
 
-    background: linear-gradient( rgb(85, 99, 86), rgb(44, 53, 46) );
+    background-image: linear-gradient( rgba(85, 99, 86, 0.9), rgba(44, 53, 46, 0.9)) , url("./../img/portfolio.png");
+    background-size: cover;
 }
 
 h1, h2{

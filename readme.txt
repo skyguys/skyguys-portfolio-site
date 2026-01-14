@@ -1,4 +1,4 @@
---Readme document for *YOUR NAME*, *YOUR_EMAIL@uci.edu*--
+--Readme document for AEDAN MAGSOMBOl, anmagsom@uci.edu*--
 
 A reminder on academic integrity, as described in the syllabus.
 
@@ -11,44 +11,56 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 1. How many assignment points do you believe you completed (replace the *'s with your numbers)?
 
 */10
-- */1 Readme
-- */2 Basic HTML content
-- */1 Basic CSS styling
-- */1 Advanced feature
-- */2 Responsive layout
-- */1 Passes validation checks
-- */2 Embraces spirit of the assignment
+- 1/1 Readme
+- 2/2 Basic HTML content
+- 1/1 Basic CSS styling
+- 1/1 Advanced feature
+- 2/2 Responsive layout
+- 1/1 Passes validation checks
+- 2/2 Embraces spirit of the assignment
 
 2. What (a) basic features, (b) CSS features, and (c) advanced features did you include in your portfolio?
 
 (a) Basic features
 
-
+-Multiple images with descriptive alt attributes, when possible
+-Headings and paragraph text
+-Multiple pages with navigation between them
+-Semantic tags (footer)
 
 (b) CSS features
 
-
+-Paddings and margins modified to improve readibility
+-Bootstrap Row and Column implementation
+-Bootstrap Image Viewer
+-Changed hyperlink colors to fit theme
 
 (c) Advanced features
 
-
+-Contact form with HTML forms
+-Photo gallery (unsure if this counts)
 
 
 3. Did you ignore any of the warnings or errors presented by the accessibility checker? If so, why does this not seem like an accessibility concern? If it's useful, you can consolidate your thoughts on multiple warnings/errors if the rationale is similar.
 
-
+I did not ignore any warnings.
 
 4. How long, in hours, did it take you to complete this assignment?
 
-
+Around 12-15 hours.
 
 5. What online resources did you consult when completing this assignment? (list specific URLs, describe queries to Generative AI, or use of AI-based code completion)
 
+I used a lot of W3 Schools and small snippets from ChatGPT, such as asking if there was a 
+specific CSS tag for something I wanted to do. For example, I learned that max-width and max-height
+were a thing through this.
 
+I also used some boilerplate Bootstrap code, which I did modify and simplify to my use case.
 
 6. What classmates or other individuals did you consult as part of this assignment? What did you discuss?
 
-
+I did not discuss anything with classmates.
 
 7. Is there anything special we need to know in order to run your code?
 
+JavaScript must be enabled :)

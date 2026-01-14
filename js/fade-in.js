@@ -1,5 +1,6 @@
 
 const fadeInElements = document.getElementsByClassName("fade-in")
+const footerYear = document.getElementById("year");
 
 function fadeIn(fadeIn){
 
@@ -15,7 +16,16 @@ function reset(fadeIn){
         fadeIn[i].style.filter = "blur(0.5rem)";
     }
 }
+
+function updateFooter(){
+    const currentDate = new Date(); // Current date and time
+    const currentYear = currentDate.getFullYear(); 
+
+    footerYear.textContent = currentYear;
+}
+
 window.addEventListener("DOMContentLoaded", function() {fadeIn(fadeInElements)});
 window.addEventListener("pageshow", function() {fadeIn(fadeInElements)});
 window.addEventListener("unload", function() {reset(fadeInElements)});
 window.addEventListener("pagehide", function() {reset(fadeInElements)});
+updateFooter();
