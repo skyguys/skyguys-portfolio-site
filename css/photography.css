@@ -1,0 +1,51 @@
+
+.custom-navbar{
+    background-color: rgb(156, 141, 141);
+
+}
+
+.banner-bg{
+    background: linear-gradient( rgb(99, 85, 85), rgb(53, 44, 44) );
+}
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    letter-spacing: -0.2rem;
+}
+
+.portfolio-bg h1{
+    font-weight: 900;
+    font-size: 5vw;
+}
+
+.masonry {
+    margin: 5%;
+    column-count: 3;
+    column-gap: 0.1rem;
+}
+
+.masonry img {
+    width: 100%;
+    margin-bottom: 0.1rem;
+    break-inside: avoid;
+}
+
+.gallery-img{
+    transition: 0.25s;
+}
+
+.gallery-img:hover{
+    transform: scale(1.10);
+}
+
+/* Fixes issue with vertical images and makes entire image fit */
+/* Modal border and padding background are fixed through bootstrap classes */
+#modalImage {
+    max-width: 90vw;   
+    max-height: 90vh;  
+    width: auto;       
+    height: auto;      
+    margin: auto;
+}

@@ -30,12 +30,17 @@ h2{
 }
 
 .portfolio-content h1{
-    font-size: 3vw;
+    font-size: 3em;
     font-weight: 600;
 }
 
 .portfolio-content h2{
     font-size: 2vw;
+    font-weight: 600;
+}
+
+.portfolio-content h3{
+    font-size: 1vw;
     font-weight: 600;
 }
 
