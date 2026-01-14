@@ -44,8 +44,8 @@ h1{
     text-decoration: none;
 }
 
-.form-content p{
-    padding-top:1%;
+.form-content label{
+    margin-top:1%;
 }
 
 .form-content textarea, input{
