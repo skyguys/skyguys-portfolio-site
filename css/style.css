@@ -3,7 +3,7 @@ body{
     font-family: "JetBrains Mono", 'Courier New', Courier, monospace;
     overflow-x: hidden; /* Hide horizontal scrolling */
     background-color: white;
-}   
+}
 
 .main-body{
     padding-top: 50px;
@@ -13,6 +13,11 @@ body{
 .custom-navbar{
     --bs-navbar-padding-x: 0.5rem;
     --bs-navbar-padding-y: 0.5rem;
+}
+
+.custom-navbar a:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
 }
 
 .navbar-toggler{
