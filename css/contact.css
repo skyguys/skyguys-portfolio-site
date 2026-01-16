@@ -4,7 +4,6 @@
 }
 
 .banner-bg, footer{
-
     background-image: linear-gradient( rgba(99, 97, 85, 0.9), rgb(53, 44, 44, 0.9) ), url("./../img/film_burn.jpg");
 }
 
@@ -50,8 +49,20 @@ h1{
     margin: 0 1%;
 }
 
+.h-captcha iframe{
+    max-width: 100%;
+}
+
 @media (max-width: 992px){
     .body-content{
         margin: 2.5% 10%;
+    }
+
+    .body-content h2{
+        font-size: 1.5rem;
+    }
+
+    .body-content h3{
+        font-size: 1rem;
     }
 }
