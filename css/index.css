@@ -17,7 +17,7 @@
 .data-box h1{
     letter-spacing: -0.25rem;
     line-height: clamp(2rem, 8vw, 5rem);
-    font-size: clamp(1rem, 15vw, 7rem);
+    font-size: clamp(1rem, 15vw, 6rem);
 }
 
 .data-box h2{
@@ -52,7 +52,7 @@
 }
 
 .data-box{
-    margin: 5% 20% 0;
+    margin: 5% 20%;
 }
 
 .data-box iframe{

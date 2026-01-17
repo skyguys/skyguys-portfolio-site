@@ -57,6 +57,7 @@ body{
     align-items: center;
     text-align: center;
     background-size: cover;
+    background-attachment: fixed;
 
     /* Background stuff */
     padding: 0 20%; 
@@ -77,13 +78,15 @@ body{
 }
 
 p, li, a, footer{
-    font-size: clamp(0.8rem, 1.3vw, 3rem);
+    font-size: clamp(0.8rem, 1.3vw, 1.5rem);
 }
 
 footer{
-    padding: 1.5%;
+    padding: 3%;
     color: white;
     text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /* Tablets */
