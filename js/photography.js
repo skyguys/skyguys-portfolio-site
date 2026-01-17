@@ -9,6 +9,7 @@ const imagesGallery = document.getElementById("images");
 
 function onClick(img){
     modalImg.src = img.src;
+    modalImg.alt = img.alt;
     modal.show();
 }
 

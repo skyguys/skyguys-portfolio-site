@@ -89,7 +89,7 @@ footer{
 /* Tablets */
 @media (max-width: 992px){
     .banner-bg{
-        padding: 0% 2.5%;
+        padding: 0% 10%;
     }
     
     .banner-bg img{
@@ -102,6 +102,9 @@ footer{
 }
 
 @media (max-width: 350px), (max-height: 350px){
+    .banner-bg{
+        padding: 0 5%;
+    }
     p, li, a, footer{
         font-size: clamp(0.65rem, 1.2vw, 3rem);
     }
