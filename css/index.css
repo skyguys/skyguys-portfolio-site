@@ -16,14 +16,14 @@
 
 .data-box h1{
     letter-spacing: -0.25rem;
-    line-height: 5rem;
-    font-size: 7rem;
+    line-height: clamp(2rem, 8vw, 5rem);
+    font-size: clamp(1rem, 15vw, 7rem);
 }
 
 .data-box h2{
     letter-spacing: -0.25rem;
-    line-height: 3rem;
-    font-size: 5rem;
+    line-height: 3.5rem;
+    font-size: clamp(2rem, 7vw, 4rem);
 }
 
 .data-box h1:hover, .data-box h2:hover{
@@ -70,16 +70,10 @@ i{
     }
 
     .data-box h1{
-        font-size: 4rem;
-        line-height: 3rem;
+        line-height: normal;
     }
 
     .data-box h2{
-        font-size: 3rem;
-        line-height: 2rem;
-    }
-
-    .data-box img{
-        width:10%;
+        line-height: normal;
     }
 }

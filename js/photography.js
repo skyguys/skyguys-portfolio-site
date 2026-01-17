@@ -12,7 +12,7 @@ function onClick(img){
     modal.show();
 }
 
-function createImages(){
+function createImages(altText){
 
     // Data for image loop
     const filepath = "./../img/photos/img";
@@ -37,9 +37,12 @@ function createImages(){
 
         // Change image source
         img.src = filepath + imageNumbers[randomImage] + file_extension;
+        img.alt = altText[randomImage];
 
         // Remove the value from the array
         imageNumbers.splice(randomImage, 1);
+        altText.splice(randomImage, 1)
+
     
         console.log(img.src + " created and added to HTML.");
         img.className = "img-fluid gallery-img";
@@ -49,4 +52,105 @@ function createImages(){
     }
 }
 
-createImages();
+function preloadAlt(){
+    // Hard-coded from a file
+    const altText = [];
+    altText.push(
+        "A photo of Aedan and friends dressed up for halloween.",
+        "A photo of Aedan as a ghost for Halloween.",
+        "A photo of the band Wallows playing a show at UCI.",
+        "A photo of a freeway overpass sign covered in grafitti.",
+        "A POV photo of Aedan's shoes laying down on a rock",
+        "A photo of a car taken from an overpass in Oregon.",
+        "A photo of a beach sign taken in Oregon.",
+        "A photo of the interior of a dark restaurant taken in Oregon.",
+        "A photo of a beach chair taken in Oregon.",
+        "A photo of two people walking a few feet apart on the beach taken in Oregon.",
+        "A photo of the Oregon Coast taken from atop a mountain.",
+        "A photo of Aedan's dog Pebbles on the beach.",
+        "A photo of train conductors in Japan.",
+        "A photo of people in the subway in Japan.",
+        "A photo of a crosswalk taken from atop a building in Japan.",
+        "A photo of a traincar taken in Japan.",
+        "A photo of a city skyline taken in Japan.",
+        "A photo of a person waiting for a train in Japan.",
+        "A photo of a person walking by a vending machine in Japan.",
+        "A photo of the sunset at a trainstrtion in Japan.",
+        "a photo of two modified cars in Japan.",
+        "A mirror selfie taken by Aedan in Japan.",
+        "A photo of a business person with a passing train in the background in Japan.",
+        "A photo of people getting drinks from a vending machine in Japan.",
+        "A photo of a lonely chair at a train station in Japan.",
+        "A photo of a man in a smoking room in Japan.",
+        "A photo of someone walking to their car in Japan.",
+        "A photo of a deer with a shrine in the background in Japan.",
+        "A photo of vending machines in Japan.",
+        "A photo of deer resting in water in Japan.",
+        "A photo of deer resting in water in Japan.",
+        "A photo of a person feeding deer in Japan.",
+        "A photo of a man and a child on a beach overlook.",
+        "A photo of two people painting the beach.",
+        "A photo of the stars in Joshua Tree.",
+        "A POV photo of Aedan's shoes laying down in the grass",
+        "A photo of a door at a pier",
+        "A photo of rocks at a water cliffside",
+        "A photo of a distant sailboat.",
+        "A photo of a person taking a photo of the Golden Gate ridge.",
+        "A photo of the beach taken from a vantage point.",
+        "A photo of Aedan's friends in the ocean.",
+        "A photo taken at a Porter Robinson concert with a spotlight on him.",
+        "A photo taken at a Porter Robinson Concert with people cheering in the crowd.",
+        "A photo of Langson Library at UC Irvine.",
+        "A photo of Aedan and his car.",
+        "A photo of a couple on the beach.",
+        "A photo of the Japanese Garden in San Diego.",
+        "A photo of a cherry blossom.",
+        "A photo of a rock atop a vantage point in a cherry blossom garden.",
+        "A photo of Aedan's friends in the ocean.",
+        "A photo of two people playing chess.",
+        "A photo of Aedan's car at night",
+        "A photo of Aedan's car at night",
+        "A photo of vibrant, red flowers",
+        "A photo of someone walking to class at UC Irvine",
+        "A photo of a person on a boat",
+        "A photo of a cold, snowy house",
+        "A photo of a cat that destroyed a Christmas tree.",
+        "A photo of a snowy neighborhood",
+        "A photo of the snow taken at night",
+        "A photo of Quebec City in Canada during a foggy snow day.",
+        "A photo of the river between Levis and Quebec City in Canada with ice in the water.",
+        "A photo of Crystal Cove Shake Shack with Aedan's car in front.",
+        "A photo of a man walking along the beach shore.",
+        "A photo of a sunny apartment living room.",
+        "A photo of Aedan's car at a gas station",
+        "A photo of people walking on the street in LA.",
+        "A photo of the Waffle House sign.",
+        "A photo of the sky taken after a rainstorm.",
+        "A photo of a dog in a pickup truck.",
+        "A photo of a woman in a butterfly greenhouse.",
+        "A photo of the highway at sunset.",
+        "A silhouette photo of people on the beach at Sunset.",
+        "A silhouette photo of people on the beach overlooking the water at Sunset.",
+        "A photo of a cabin under the stars",
+        "A photo of a cabin porch",
+        "A photo of a house in a field",
+        "A photo of Aedan's dog milo in a wagon",
+        "A photo of photographers taking a photo of a guitarrist in a studio",
+        "A photo of a person in an angel costume looking down",
+        "A photo of a person in an angel costume sitting in front of a lit-up mirror",
+        "A photo of a person with a blue window backdrop",
+        "A close-up photo of a person with a blue window backdrop",
+        "A photo of a person with a yellow window backdrop",
+        "A dark photo of a person in red lighting",
+        "A photo of Aedan's dog pebbles",
+        "A black-and-white photo of a person in dark lighting",
+        "A black-and-white photo of a person eating lunch",
+        "A black-and-white photo of two people in angel costumes",
+        "A black-and-white photo of a person walking around a heart on the ground with the message 'Step here for good luck'",
+        "A black-and-white photo of a person doing a skateboard trick."
+    ) 
+
+    createImages(altText);
+}
+
+preloadAlt();

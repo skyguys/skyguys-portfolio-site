@@ -28,7 +28,7 @@ body{
     --bs-navbar-toggler-focus-width: 0rem;
     width: 100%;
 }
-
+    
 /* Fix really weird issue with bootstrap rows causing horiz scroll*/
 .row{
     --bs-gutter-x: 0;
@@ -69,11 +69,15 @@ body{
 
 .banner-bg h1{
     font-weight: 900;
-    font-size: 4rem;
+    font-size: clamp(1rem, 10vw, 4rem);
 }
 
-p, li{
-    font-size: 1.25rem;
+.banner-bg h2{
+    font-size: clamp(0.8rem, 10vw, 2rem);
+}
+
+p, li, a, footer{
+    font-size: clamp(0.8rem, 1.3vw, 3rem);
 }
 
 footer{
@@ -85,7 +89,7 @@ footer{
 /* Tablets */
 @media (max-width: 992px){
     .banner-bg{
-        padding: 0% 10%;
+        padding: 0% 2.5%;
     }
     
     .banner-bg img{
@@ -95,36 +99,10 @@ footer{
     .banner-bg img:hover{
         width:52.5%;
     }
-
-    .banner-bg h1{
-        font-size: 3rem;
-    }
-
-    .banner-bg h2{
-        font-size: 1.5rem;
-    }
-
-    .banner-bg p{
-        font-size: 1rem;
-    }
-
-    p, li{
-        font-size: 1rem;
-    }
 }
 
-/* Medium phones */
-@media (max-width: 576px){
-
-    .banner-bg h1{
-        font-size: 2.5rem;
-    }
-
-    .banner-bg h2{
-        font-size: 1.25rem;
-    }
-
-    .banner-bg p{
-        font-size: 0.9rem;
+@media (max-width: 350px), (max-height: 350px){
+    p, li, a, footer{
+        font-size: clamp(0.65rem, 1.2vw, 3rem);
     }
 }

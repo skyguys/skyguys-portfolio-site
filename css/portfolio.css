@@ -29,12 +29,14 @@ h2{
 }
 
 .portfolio-content h1{
-    font-size: 3rem;
+    /* font-size: 3rem; */
+    font-size: clamp(1.5rem, 5vw, 3rem);
     font-weight: 600;
 }
 
 .portfolio-content h2{
-    font-size: 2rem;
+    /* font-size: 2rem; */
+    font-size: clamp(1.25rem, 4vw, 2rem);
     font-weight: 600;
 }
 
@@ -72,17 +74,5 @@ em{
 @media (max-width: 992px){
     .portfolio-content{
         margin: 2.5% 10%;
-    }
-
-    .portfolio-content h1{
-        font-size: 2.5rem;
-    }
-
-    .portfolio-content h2{
-        font-size: 1.75rem;
-    }
-
-    .tools p{
-        font-size: 0.6rem;
     }
 }
